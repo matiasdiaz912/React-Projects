@@ -1,0 +1,86 @@
+h1{
+  color: white;
+  text-align: center;
+}
+
+body{
+  background-color: rgba(0, 0, 0, 0.829);
+  display: flex;
+  justify-content: center;
+}
+
+.cuadrado{
+  border: white 2px solid;
+  width: 100px;
+  height: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.cuadro{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 300px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.turnos{
+  color: white;
+  display: flex;
+  gap: 150px;
+  font-size: 3rem;
+}
+
+.draw{
+  background-color: gray;
+  border: white;
+  width: 400px;
+  height: 300px;
+  display: flex;
+  display: none;
+}
+
+.turnoX{
+  background-color: aqua;
+  padding: 10px;
+
+}
+
+.turnoO{
+  background-color: aqua;
+  padding: 10px;
+}
+
+.closeGame{
+  background-color: rgba(0, 0, 0, 0.445);
+  color: white;
+  position: absolute;
+  margin: auto;
+  width: 400px;
+  height: 400px;
+  border: white 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+    & .ganador{
+      border: white 2px solid;
+      padding: 25px;
+    }
+
+    & h2{
+      font-size: 2rem;
+    }
+
+    & button{
+      background-color: wheat;
+      border: white 1px solid;
+      padding: 5px;
+    }
+}
